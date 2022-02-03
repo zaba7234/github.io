@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8">
+      <title>Assignment4</title>
+
+      <style type="text/css">
+
+        table, tr, th, td
+        {
+          table-layout: fixed;
+          width: 40px;
+          height: 40px;
+          border-width: 1px;
+          border-style: solid;
+          border-color: black;
+          font-family: Arial, sans-serif;
+          text-align: center;
+          font-size: 35px;
+          overflow: hidden;
+          word-break: normal;
+          border-collapse: collapse;
+          border-spacing: 0px;
+          text-align: center;
+          vertical-align: center
+        }
+        .tg-8m24
+        {
+          table-layout: fixed;
+          background-color: lightgrey;
+          border-collapse: collapse;
+          border-spacing: 0px;
+          border-style: none;
+          border-color: black;
+        }
+        .tg-0lax
+        {
+          table-layout: fixed;
+          border-collapse: collapse;
+          border-color: black;
+        }
+
+        .google
+        {
+          background-color: #202124;
+          color: #96999d;
+          font-family: Roboto, sans-serif;
+          text-indent: 100px
+        }
+        .google .header
+        {
+          color: #7fa3e1;
+          font-size: 22px;
+        }
+        .google .subtext
+        {
+          color: #6b7074;
+          font-size: 14px;
+        }
+      </style>
+  </head>
+  <body>
+    <h1>Challenges</h1>
+    <a href="index.html"><em>Back to homepage</em></a>
+    <div>
+      <h2>Challenge 2: Build a Chess Board</h2>
+      <table class="chess">
+        <tr>
+          <th class="tg-8m24">&#9820;</th>
+          <th class="tg-0lax">&#9822;</th>
+          <th class="tg-8m24">&#9821;</th>
+          <th class="tg-0lax">&#9819;</th>
+          <th class="tg-8m24">&#9818;</th>
+          <th class="tg-0lax">&#9821;</th>
+          <th class="tg-8m24">&#9822;</th>
+          <th class="tg-0lax">&#9820;</th>
+        </tr>
+        <tr>
+          <td class="tg-0lax">&#9823;</td>
+          <td class="tg-8m24">&#9823;</td>
+          <td class="tg-0lax">&#9823;</td>
+          <td class="tg-8m24">&#9823;</td>
+          <td class="tg-0lax">&#9823;</td>
+          <td class="tg-8m24">&#9823;</td>
+          <td class="tg-0lax">&#9823;</td>
+          <td class="tg-8m24">&#9823;</td>
+        </tr>
+        <tr>
+          <td class="tg-8m24"></td>
+          <td class="tg-0lax"></td>
+          <td class="tg-8m24"></td>
+          <td class="tg-0lax"></td>
+          <td class="tg-8m24"></td>
+          <td class="tg-0lax"></td>
+          <td class="tg-8m24"></td>
+          <td class="tg-0lax"></td>
+        </tr>
+        <tr>
+          <td class="tg-0lax"></td>
+          <td class="tg-8m24"></td>
+          <td class="tg-0lax"></td>
+          <td class="tg-8m24"></td>
+          <td class="tg-0lax"></td>
+          <td class="tg-8m24"></td>
+          <td class="tg-0lax"></td>
+          <td class="tg-8m24"></td>
+        </tr>
+        <tr>
+          <td class="tg-8m24"></td>
+          <td class="tg-0lax"></td>
+          <td class="tg-8m24"></td>
+          <td class="tg-0lax"></td>
+          <td class="tg-8m24"></td>
+          <td class="tg-0lax"></td>
+          <td class="tg-8m24"></td>
+          <td class="tg-0lax"></td>
+        </tr>
+        <tr>
+          <td class="tg-0lax"></td>
+          <td class="tg-8m24"></td>
+          <td class="tg-0lax"></td>
+          <td class="tg-8m24"></td>
+          <td class="tg-0lax"></td>
+          <td class="tg-8m24"></td>
+          <td class="tg-0lax"></td>
+          <td class="tg-8m24"></td>
+        </tr>
+        <tr>
+          <td class="tg-8m24">&#9817;</td>
+          <td class="tg-0lax">&#9817;</td>
+          <td class="tg-8m24">&#9817;</td>
+          <td class="tg-0lax">&#9817;</td>
+          <td class="tg-8m24">&#9817;</td>
+          <td class="tg-0lax">&#9817;</td>
+          <td class="tg-8m24">&#9817;</td>
+          <td class="tg-0lax">&#9817;</td>
+        </tr>
+        <tr>
+          <td class="tg-0lax">&#9814;</td>
+          <td class="tg-8m24">&#9816;</td>
+          <td class="tg-0lax">&#9815;</td>
+          <td class="tg-8m24">&#9813;</td>
+          <td class="tg-0lax">&#9812;</td>
+          <td class="tg-8m24">&#9815;</td>
+          <td class="tg-0lax">&#9816;</td>
+          <td class="tg-8m24">&#9814;</td>
+        </tr>
+      </table>
+    </div>
+    <div>
+      <h2>Challenge 3: Create a Form</h2>
+      <h4>What's your favorite ice-cream flavor?</h4>
+      <form>
+        <label for="flavor">Ice Cream Flavor:</label><br>
+        <input type="text" id="flavor" name="flavor"><br>
+
+        <h4>What toppings do you want?</h4>
+        <input type="checkbox" id="fudge" name="topping" value="Fudge">
+        <label for="fudge">Fudge</label><br>
+        <input type="checkbox" id="oreo" name="topping" value="Oreo">
+        <label for="oreo">Oreo</label><br>
+        <input type="checkbox" id="caramel" name="topping" value="Caramel">
+        <label for="caramel">Caramel</label><br>
+
+        <h4>What cone/cup do you want?</h4>
+        <input type="radio" id="sugar-cone" name="topping" value="Sugar Cone">
+        <label for="sugar-cone">Sugar Cone</label><br>
+        <input type="radio" id="waffle-cone" name="topping" value="Waffle Cone">
+        <label for="waffle-cone">Waffle Cone</label><br>
+        <input type="radio" id="cup" name="topping" value="Cup">
+        <label for="cup">Cup</label><br><br>
+
+        <input type="submit" value="Submit Information">
+      </form>
+    </div>
+    <h2>Challenge 4: Google Search</h2>
+    <div class="google">
+      <p class="subtext">About 3,400,000,000 results (0.84 seconds)<p>
+      <a class="header" href="https://www.colorado.edu/atlas/">ATLAS Institute | University of Colorado Boulder</a></p>
+      <p>
+    </div>
+    <div>
+      <h2>Challenge 5: Accessibility</h2>
+    </div>
+  </body>
+</html>
