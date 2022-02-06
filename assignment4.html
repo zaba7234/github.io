@@ -52,6 +52,13 @@
           color: #7fa3e1;
           font-size: 22px;
         }
+        .google .regtext
+        {
+          background-color: #202124;
+          color: #96999d;
+          margin-left: 100px;
+          text-indent: 0px;
+        }
         .google .subtext
         {
           color: #6b7074;
@@ -60,10 +67,20 @@
       </style>
   </head>
   <body>
-    <h1>Challenges</h1>
     <a href="index.html"><em>Back to homepage</em></a>
+    <h1>Challenges</h1>
     <div>
-      <h2>Challenge 2: Build a Chess Board</h2>
+      <h2>Table of Contents</h2>
+      <ul>
+        <li> <a href="index.html">Challenge 1: Add a Table of Contents</a></li>
+        <li> <a href="#Challenge2">Challenge 2: Build a Chess Board</a></li>
+        <li> <a href="#Challenge3">Challenge 3: Create a Form</a></li>
+        <li> <a href="#Challenge4">Challenge 4: A Google Search Page</a></li>
+        <li> <a href="#Challenge5">Challenge 5: Accessibility Concerns</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2 id="Challenge2">Challenge 2: Build a Chess Board</h2>
       <table class="chess">
         <tr>
           <th class="tg-8m24">&#9820;</th>
@@ -148,7 +165,7 @@
       </table>
     </div>
     <div>
-      <h2>Challenge 3: Create a Form</h2>
+      <h2 id="Challenge3">Challenge 3: Create a Form</h2>
       <h4>What's your favorite ice-cream flavor?</h4>
       <form>
         <label for="flavor">Ice Cream Flavor:</label><br>
@@ -173,15 +190,15 @@
         <input type="submit" value="Submit Information">
       </form>
     </div>
-    <h2>Challenge 4: Google Search</h2>
+    <h2 id="Challenge4">Challenge 4: A Google Search Page</h2>
     <div class="google">
       <p class="subtext">About 3,400,000,000 results (0.84 seconds)<p>
       <a class="header" href="https://www.colorado.edu/atlas/">ATLAS Institute | University of Colorado Boulder</a></p>
-      <p>ATLAS is an interdisciplinary institute for radical creativity and invention.<br>
-        We transform ingenious ideas into reality through research, ...</p>
+      <p class="regtext">ATLAS is an interdisciplinary institute for radical creativity and invention. We transform ingenious ideas into reality through research, ...</p>
     </div>
     <div>
-      <h2>Challenge 5: Accessibility</h2>
+      <h2 id="Challenge5">Challenge 5: Accessibility Concerns</h2>
+      <p> A big accessibility concern of mine related to the challenges would be for Challenge 3: Form. The form element would be one the most common ones seen in regular Internet use, and will often serve a very important role (for instance: Logins, registration forms, purchasing, etc.). In its current state, it is not very accessible to those with vision disability, typing disability, or those lacking writing ability. To rectify these concerns, I think I would add a screen reader, a voice input for hands-off typing and to help those who have difficulty writing.
     </div>
   </body>
 </html>
