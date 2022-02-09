@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+      <meta charset="utf-8">
+      <title>Assignment5</title>
+
+      <style type="text/css">
+
+        .chess
+        {
+          table-layout: fixed;
+          width: 40px;
+          height: 40px;
+          border-width: 1px;
+          border-style: solid;
+          border-color: black;
+          font-family: Arial, sans-serif;
+          text-align: center;
+          font-size: 35px;
+          overflow: hidden;
+          word-break: normal;
+          border-collapse: collapse;
+          border-spacing: 0px;
+          text-align: center;
+          vertical-align: center
+        }
+        .chess .tr
+        {
+          table-layout: inherit;
+
+        }
+        .chess .th
+        {
+          table-layout: inherit;
+        }
+        .chess .td
+        {
+          table-layout: inherit;
+        }
+        .td .tg-8m24
+        {
+          table-layout: fixed;
+          background-color: lightgrey;
+          border-collapse: collapse;
+          border-spacing: 0px;
+          border-style: none;
+          border-color: black;
+        }
+        .th .tg-8m24
+        {
+          table-layout: fixed;
+          background-color: lightgrey;
+          border-collapse: collapse;
+          border-spacing: 0px;
+          border-style: none;
+          border-color: black;
+        }
+        .td .tg-0lax
+        {
+          table-layout: fixed;
+          border-collapse: collapse;
+          border-color: black;
+        }
+        .th .tg-0lax
+        {
+          table-layout: fixed;
+          border-collapse: collapse;
+          border-color: black;
+        }
+
+        .google
+        {
+          background-color: #202124;
+          color: #96999d;
+          font-family: Roboto, sans-serif;
+          text-indent: 65px;
+        }
+        .google .header
+        {
+          color: #7fa3e1;
+          font-size: 22px;
+          margin-left: 65px;
+        }
+        .google .regtext
+        {
+          background-color: #202124;
+          color: #96999d;
+          margin-left: 65px;
+          text-indent: 0px;
+        }
+        .google .subtext
+        {
+          color: #6b7074;
+          font-size: 14px;
+        }
+        .google .subcontent
+        {
+          margin-left: inherit;
+        }
+        .google .subcontent .header
+        {
+          color: #7fa3e1;
+          font-size: 22px;
+          margin-left: 20px;
+        }
+        .google .subcontent .regtext
+        {
+          background-color: #202124;
+          color: #96999d;
+          margin-left: 85px;
+        }
+      </style>
+  </head>
+  <body>
+    <a href="index.html"><em>Back to homepage</em></a>
+    <h1>Challenges</h1>
+    <div>
+      <h2>Table of Contents</h2>
+      <ul>
+        <li> <a href="index.html">Challenge 1: Add a Table of Contents</a><em> (Nothing to change)</em></li>
+        <li> <a href="#Challenge2">Challenge 2: Build a Chess Board</a></li>
+        <li> <a href="#Challenge3">Challenge 3: Create a Form</a></li>
+        <li> <a href="#Challenge4">Challenge 4: A Google Search Page</a></li>
+        <li> <a href="#Challenge5">Challenge 5: Accessibility Concerns</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2 id="Challenge2">Challenge 2: Build a Chess Board</h2>
+      <table class="chess">
+        <tr class="tr th">
+          <th class="tg-8m24 th">&#9820;</th>
+          <th class="tg-0lax th">&#9822;</th>
+          <th class="tg-8m24 th">&#9821;</th>
+          <th class="tg-0lax th">&#9819;</th>
+          <th class="tg-8m24 th">&#9818;</th>
+          <th class="tg-0lax th">&#9821;</th>
+          <th class="tg-8m24 th">&#9822;</th>
+          <th class="tg-0lax th">&#9820;</th>
+        </tr>
+        <tr class="tr td">
+          <td class="tg-0lax td">&#9823;</td>
+          <td class="tg-8m24 td">&#9823;</td>
+          <td class="tg-0lax td">&#9823;</td>
+          <td class="tg-8m24 td">&#9823;</td>
+          <td class="tg-0lax td">&#9823;</td>
+          <td class="tg-8m24 td">&#9823;</td>
+          <td class="tg-0lax td">&#9823;</td>
+          <td class="tg-8m24 td">&#9823;</td>
+        </tr>
+        <tr class="tr td">
+          <td class="tg-8m24 td"></td>
+          <td class="tg-0lax td"></td>
+          <td class="tg-8m24 td"></td>
+          <td class="tg-0lax td"></td>
+          <td class="tg-8m24 td"></td>
+          <td class="tg-0lax td"></td>
+          <td class="tg-8m24 td"></td>
+          <td class="tg-0lax td"></td>
+        </tr>
+        <tr class="tr td">
+          <td class="tg-0lax td"></td>
+          <td class="tg-8m24 td"></td>
+          <td class="tg-0lax td"></td>
+          <td class="tg-8m24 td"></td>
+          <td class="tg-0lax td"></td>
+          <td class="tg-8m24 td"></td>
+          <td class="tg-0lax td"></td>
+          <td class="tg-8m24 td"></td>
+        </tr>
+        <tr class="tr td">
+          <td class="tg-8m24 td"></td>
+          <td class="tg-0lax td"></td>
+          <td class="tg-8m24 td"></td>
+          <td class="tg-0lax td"></td>
+          <td class="tg-8m24 td"></td>
+          <td class="tg-0lax td"></td>
+          <td class="tg-8m24 td"></td>
+          <td class="tg-0lax td"></td>
+        </tr>
+        <tr class="tr td">
+          <td class="tg-0lax td"></td>
+          <td class="tg-8m24 td"></td>
+          <td class="tg-0lax td"></td>
+          <td class="tg-8m24 td"></td>
+          <td class="tg-0lax td"></td>
+          <td class="tg-8m24 td"></td>
+          <td class="tg-0lax td"></td>
+          <td class="tg-8m24 td"></td>
+        </tr>
+        <tr class="tr td">
+          <td class="tg-8m24 td">&#9817;</td>
+          <td class="tg-0lax td">&#9817;</td>
+          <td class="tg-8m24 td">&#9817;</td>
+          <td class="tg-0lax td">&#9817;</td>
+          <td class="tg-8m24 td">&#9817;</td>
+          <td class="tg-0lax td">&#9817;</td>
+          <td class="tg-8m24 td">&#9817;</td>
+          <td class="tg-0lax td">&#9817;</td>
+        </tr>
+        <tr class="tr td">
+          <td class="tg-0lax td">&#9814;</td>
+          <td class="tg-8m24 td">&#9816;</td>
+          <td class="tg-0lax td">&#9815;</td>
+          <td class="tg-8m24 td">&#9813;</td>
+          <td class="tg-0lax td">&#9812;</td>
+          <td class="tg-8m24 td">&#9815;</td>
+          <td class="tg-0lax td">&#9816;</td>
+          <td class="tg-8m24 td">&#9814;</td>
+        </tr>
+      </table>
+    </div>
+    <div>
+      <h2 id="Challenge3">Challenge 3: Create a Form</h2>
+      <p><em>Nothing to change</em></p>
+      <h4>What's your favorite ice-cream flavor?</h4>
+      <form>
+        <label for="flavor">Ice Cream Flavor:</label><br>
+        <input type="text" id="flavor" name="flavor"><br>
+
+        <h4>What toppings do you want?</h4>
+        <input type="checkbox" id="fudge" name="topping" value="Fudge">
+        <label for="fudge">Fudge</label><br>
+        <input type="checkbox" id="oreo" name="topping" value="Oreo">
+        <label for="oreo">Oreo</label><br>
+        <input type="checkbox" id="caramel" name="topping" value="Caramel">
+        <label for="caramel">Caramel</label><br>
+
+        <h4>What cone/cup do you want?</h4>
+        <input type="radio" id="sugar-cone" name="topping" value="Sugar Cone">
+        <label for="sugar-cone">Sugar Cone</label><br>
+        <input type="radio" id="waffle-cone" name="topping" value="Waffle Cone">
+        <label for="waffle-cone">Waffle Cone</label><br>
+        <input type="radio" id="cup" name="topping" value="Cup">
+        <label for="cup">Cup</label><br><br>
+
+        <input type="submit" value="Submit Information">
+      </form>
+    </div>
+    <h2 id="Challenge4">Challenge 4: A Google Search Page</h2>
+    <div class="google">
+      <p class="subtext">About 3,400,000,000 results (0.84 seconds)</p>
+      <a class="header" href="https://www.colorado.edu/atlas/">ATLAS Institute | University of Colorado Boulder</a>
+      <p class="regtext">ATLAS is an interdisciplinary institute for radical creativity and invention. We transform ingenious ideas into reality through research, ...</p>
+      <div class="subcontent">
+
+        <table style="border: 0px;">
+          <tr>
+            <td><a class="header" href="https://www.colorado.edu/atlas/academics/grad">Graduate Degrees in Creative ...</a>
+            <p class="regtext">Radically interdisciplinary, ATLAS graduate programs nurture ...</p></td>
+          </tr>
+          <tr>
+            <td>row2</td>
+          </tr>
+          <tr>
+            <td>row3</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div>
+      <h2 id="Challenge5">Challenge 5: Accessibility Concerns</h2>
+      <p><em>Nothing to change</em></p>
+      <p> A big accessibility concern of mine related to the challenges would be for Challenge 3: Form. The form element would be one the most common ones seen in regular Internet use, and will often serve a very important role (for instance: Logins, registration forms, purchasing, etc.). In its current state, it is not very accessible to those with vision disability, typing disability, or those lacking writing ability. To rectify these concerns, I think I would add a screen reader, a voice input for hands-off typing and to help those who have difficulty writing.
+    </div>
+  </body>
+</html>
