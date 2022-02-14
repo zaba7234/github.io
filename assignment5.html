@@ -1,115 +1,128 @@
 <!DOCTYPE html>
 <html>
   <head lang="en">
-      <meta charset="utf-8">
-      <title>Assignment5</title>
+    <meta charset="utf-8">
+    <title>Assignment5</title>
 
-      <style type="text/css">
+    <style type="text/css">
+      table, tr, th, td
+      {
+        table-layout: fixed;
+        width: 40px;
+        height: 40px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: black;
+        font-family: Arial, sans-serif;
+        text-align: center;
+        font-size: 35px;
+        overflow: hidden;
+        word-break: normal;
+        border-collapse: collapse;
+        border-spacing: 0px;
+        text-align: center;
+        vertical-align: center
+      }
+      .tg-8m24
+      {
+        table-layout: fixed;
+        background-color: lightgrey;
+        border-collapse: collapse;
+        border-spacing: 0px;
+        border-style: none;
+        border-color: black;
+      }
+      .tg-0lax
+      {
+        table-layout: fixed;
+        border-collapse: collapse;
+        border-color: black;
+      }
 
-        .chess
-        {
-          table-layout: fixed;
-          width: 40px;
-          height: 40px;
-          border-width: 1px;
-          border-style: solid;
-          border-color: black;
-          font-family: Arial, sans-serif;
-          text-align: center;
-          font-size: 35px;
-          overflow: hidden;
-          word-break: normal;
-          border-collapse: collapse;
-          border-spacing: 0px;
-          text-align: center;
-          vertical-align: center
-        }
-        .chess .tr
-        {
-          table-layout: inherit;
-
-        }
-        .chess .th
-        {
-          table-layout: inherit;
-        }
-        .chess .td
-        {
-          table-layout: inherit;
-        }
-        .td .tg-8m24
-        {
-          table-layout: fixed;
-          background-color: lightgrey;
-          border-collapse: collapse;
-          border-spacing: 0px;
-          border-style: none;
-          border-color: black;
-        }
-        .th .tg-8m24
-        {
-          table-layout: fixed;
-          background-color: lightgrey;
-          border-collapse: collapse;
-          border-spacing: 0px;
-          border-style: none;
-          border-color: black;
-        }
-        .td .tg-0lax
-        {
-          table-layout: fixed;
-          border-collapse: collapse;
-          border-color: black;
-        }
-        .th .tg-0lax
-        {
-          table-layout: fixed;
-          border-collapse: collapse;
-          border-color: black;
-        }
-
-        .google
-        {
-          background-color: #202124;
-          color: #96999d;
-          font-family: Roboto, sans-serif;
-          text-indent: 65px;
-        }
-        .google .header
-        {
-          color: #7fa3e1;
-          font-size: 22px;
-          margin-left: 65px;
-        }
-        .google .regtext
-        {
-          background-color: #202124;
-          color: #96999d;
-          margin-left: 65px;
-          text-indent: 0px;
-        }
-        .google .subtext
-        {
-          color: #6b7074;
-          font-size: 14px;
-        }
-        .google .subcontent
-        {
-          margin-left: inherit;
-        }
-        .google .subcontent .header
-        {
-          color: #7fa3e1;
-          font-size: 22px;
-          margin-left: 20px;
-        }
-        .google .subcontent .regtext
-        {
-          background-color: #202124;
-          color: #96999d;
-          margin-left: 85px;
-        }
-      </style>
+      .google
+      {
+        background-color: #202124;
+        color: #96999d;
+        font-family: Roboto, sans-serif;
+        text-indent: 100px;
+        white-space: nowrap;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        line-height: 25px;
+      }
+      .google .header
+      {
+        font-size: 22px;
+        margin-left: 100px;
+        margin-bottom: 0;
+      }
+      .google .regtext
+      {
+        background-color: #202124;
+        color: #96999d;
+        margin-left: 100px;
+        text-indent: 0px;
+        margin-top: 8px;
+        padding-top: 0;
+      }
+      .google .subtext
+      {
+        color: #6b7074;
+        font-size: 14px;
+      }
+      .google .subcontent
+      {
+        margin-left: inherit;
+      }
+      .google .subcontent .header
+      {
+        font-size: 22px;
+        margin-left: 20px;
+      }
+      .google .subcontent .regtext
+      {
+        background-color: #202124;
+        color: #96999d;
+        margin-left: 120px;
+        margin-top: 8px;
+        padding-top: 0;
+      }
+      .column
+      {
+        float: left;
+        width: 340px;
+      }
+      .row
+      {
+        width: 1000px;
+        overflow: auto;
+        margin-bottom: 10px;
+      }
+      .row:after
+      {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      a:link
+      {
+        color: #7fa3e1;
+        text-decoration: none;
+      }
+      a:visited
+      {
+        color: #c589f9;
+      }
+      a:hover
+      {
+        text-decoration: underline;
+      }
+      a:active
+      {
+        color: #c589f9;
+        text-decoration: underline;
+      }
+    </style>
   </head>
   <body>
     <a href="index.html"><em>Back to homepage</em></a>
@@ -117,11 +130,11 @@
     <div>
       <h2>Table of Contents</h2>
       <ul>
-        <li> <a href="index.html">Challenge 1: Add a Table of Contents</a><em> (Nothing to change)</em></li>
+        <li> <a href="index.html">Challenge 1: Add a Table of Contents</a><em> (Added closing head and html tag)</em></li>
         <li> <a href="#Challenge2">Challenge 2: Build a Chess Board</a></li>
-        <li> <a href="#Challenge3">Challenge 3: Create a Form</a></li>
-        <li> <a href="#Challenge4">Challenge 4: A Google Search Page</a></li>
-        <li> <a href="#Challenge5">Challenge 5: Accessibility Concerns</a></li>
+        <li> <a href="#Challenge3">Challenge 3: Create a Form</a><em> (Nothing to change)</em></li>
+        <li> <a href="#Challenge4">Challenge 4: A Google Search Page</a> <p style="display: inline;"><em>(Used a new &lt;span&gt; tag to change style mid-element. It acts as a container to markup a specific part of text within another tag. I found it while looking for a way to change color mid-element, and referenced this webpage: <a href="https://www.w3schools.com/tags/tag_span.asp">https://www.w3schools.com/tags/tag_span.asp</a>)</em></p></li>
+        <li> <a href="#Challenge5">Challenge 5: Accessibility Concerns</a><em> (Nothing to change, but I learned about Form element built-in accessibility)</em></li>
       </ul>
     </div>
     <div>
@@ -239,27 +252,63 @@
     <h2 id="Challenge4">Challenge 4: A Google Search Page</h2>
     <div class="google">
       <p class="subtext">About 3,400,000,000 results (0.84 seconds)</p>
+      <p class="regtext" style="margin-bottom: 6px;">https://www.colorado.edu › atlas &nbsp; &nbsp;<b>&#8942;</b></p>
       <a class="header" href="https://www.colorado.edu/atlas/">ATLAS Institute | University of Colorado Boulder</a>
-      <p class="regtext">ATLAS is an interdisciplinary institute for radical creativity and invention. We transform ingenious ideas into reality through research, ...</p>
-      <div class="subcontent">
-
-        <table style="border: 0px;">
-          <tr>
-            <td><a class="header" href="https://www.colorado.edu/atlas/academics/grad">Graduate Degrees in Creative ...</a>
-            <p class="regtext">Radically interdisciplinary, ATLAS graduate programs nurture ...</p></td>
-          </tr>
-          <tr>
-            <td>row2</td>
-          </tr>
-          <tr>
-            <td>row3</td>
-          </tr>
-        </table>
+      <p class="regtext" style="margin-bottom: 25px;">ATLAS is an interdisciplinary institute for radical creativity and invention. We transform<br>ingenious ideas into reality through research, ...</p>
+      <div class="subcontent row">
+        <div class="column">
+          <a class="header" href="https://www.colorado.edu/atlas/academics/grad">Graduate Degrees in Creative ...</a>
+          <p class="regtext">Radically interdisciplinary, ATLAS<br>graduate programs nurture ...</p>
+        </div>
+        <div class="column">
+          <a class="header" href="https://www.colorado.edu/atlas/about-atlas">About</a>
+          <p class="regtext">ATLAS is an interdisciplinary<br>institute for radical creativity and ...</p>
+        </div>
       </div>
+      <div class="subcontent row">
+        <div class="column">
+          <a class="header" href="https://www.colorado.edu/atlas/academics">Academics</a>
+          <p class="regtext">Granted through the College of<br>Engineering and Applied ...</p>
+        </div>
+        <div class="column">
+          <a class="header" href="https://www.colorado.edu/atlas/academics/undergraduate">Undergraduate Programs</a>
+          <p class="regtext">Awarded through the College of<br>Engineering and Applied ...</p>
+        </div>
+      </div>
+      <div class="subcontent row">
+        <div class="column">
+          <a class="header" href="https://www.colorado.edu/atlas/faculty">Faculty</a>
+          <p class="regtext">Lecturer, co-chair Board of<br>Advisors • DESIGN, AR/VR ...</p>
+        </div>
+        <div class="column">
+          <a class="header" href="https://www.colorado.edu/atlas/research-creative">Research + Creative</a>
+          <p class="regtext">Check out ATLAS Research<br>Showcase 2020.</p>
+        </div>
+      </div>
+      <div class="subcontent row" style="margin-bottom: 40px;">
+        <div class="column">
+          <a style="margin-left: 20px;" href="https://www.google.com/search?q=ATLAS+institute+site:colorado.edu&rlz=1C5CHFA_enUS969US969&sa=X&ved=2ahUKEwi-go2Mkf71AhVRHzQIHVjXC04QrAN6BAgYEAE">More results from colorado.edu »</a>
+        </div>
+      </div>
+      <p class="regtext" style="margin-bottom: 6px;">https://www.colorado.edu › innovate › atlas-institute &nbsp; &nbsp; <b>&#8942;</b></p>
+      <a class="header" href="https://www.colorado.edu/innovate/atlas-institute">ATLAS Institute | Innovation & Entrepreeurship - University of ...</a>
+      <p class="regtext" style="margin-bottom: 35px;">Resource that sponsors diverse interdisciplinary academic and research programs, challenging<br>community members to explore, innovate, create and design well ...</p>
+
+      <p class="regtext" style="margin-bottom: 6px;">https://www.linkedin.com › school › atlas-cu-boulder &nbsp; &nbsp; <b>&#8942;</b></p>
+      <a class="header" href="https://www.linkedin.com/school/atlas-cu-boulder/">ATLAS Institute at CU Boulder Employees, Location, Alumni</a>
+      <p class="regtext" style="margin-bottom: 35px;">ATLAS is an interdisciplinary institute for radical creativity and invention where ingenious ideas<br>become reality. · <strong>ATLAS Institute</strong> at CU Boulder. View all open ...</p>
+
+      <p class="regtext" style="margin-bottom: 6px;">https://typemoon.fandom.com › wiki › Atlas &nbsp; &nbsp; <b>&#8942;</b></p>
+      <a class="header" href="https://www.linkedin.com/school/atlas-cu-boulder/"> Atlas | TYPE-MOON Wiki | Fandom</a>
+      <p class="regtext" style="margin-bottom: 35px;">It is an <strong>institute</strong> focused on the study and development of alchemy, but its members broke off<br>from the mainstream modern practice of alchemy that originated in ...<br><span style="color: #7fa3e1;">External Relationships · ‎Alchemist of Atlas · ‎Activities · ‎Headquarters</span></p>
+
+      <p class="regtext" style="margin-bottom: 6px;">https://www.internationalaffairshouse.org &nbsp; &nbsp; <b>&#8942;</b></p>
+      <a class="header" href="https://www.linkedin.com/school/atlas-cu-boulder/">ATLAS Institute at CU Boulder Employees, Location, Alumni</a>
+      <p class="regtext" style="margin-bottom: 35px;"><strong>Atlas Institute</strong> for International Affairs - The Harmony of Opposite Tensions. ... <strong>Atlas Institute.</strong><br>The World's Leading Open-Access Think-Tank and Publisher ...</p>
     </div>
     <div>
       <h2 id="Challenge5">Challenge 5: Accessibility Concerns</h2>
-      <p><em>Nothing to change</em></p>
+      <p><em>Nothing to change but I learned about Form element built-in accessibility</em></p>
       <p> A big accessibility concern of mine related to the challenges would be for Challenge 3: Form. The form element would be one the most common ones seen in regular Internet use, and will often serve a very important role (for instance: Logins, registration forms, purchasing, etc.). In its current state, it is not very accessible to those with vision disability, typing disability, or those lacking writing ability. To rectify these concerns, I think I would add a screen reader, a voice input for hands-off typing and to help those who have difficulty writing.
     </div>
   </body>
