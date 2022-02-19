@@ -1,0 +1,8 @@
+/* LINK STYLE */
+a.link_navbar:link { color:#FFF; text-decoration:none; font-weight:normal; }
+a.link_navbar:visited { color: #FFF; text-decoration:none; font-weight:normal; }
+a.link_navbar:hover { color: #FFF; text-decoration:none; font-weight:normal; }
+a.link_navbar:active { color: #FFF; text-decoration:none; font-weight:normal; }
+
+/* BOOTSTRAP OVERRIDE */
+.custom_link{ color: white !important; }
