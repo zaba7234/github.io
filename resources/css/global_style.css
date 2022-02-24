@@ -10,6 +10,7 @@ body
     background-color: #454959; 
     margin-left: 0px;
     text-indent: 15px;
+    font-weight: bold;
 }
 
 /* LINK STYLE */
@@ -38,7 +39,7 @@ a.link_navbar:active { color: #FFF; text-decoration:none; font-weight:normal; }
 .container
 {
     margin-top: 30px;
-    margin-bottom:15px;
+    margin-bottom: 30px;
 }
 
 .portrait
@@ -59,3 +60,10 @@ a.link_navbar:active { color: #FFF; text-decoration:none; font-weight:normal; }
     margin: 10px;
     text-decoration: none;
 }
+
+/*
+.followImg
+{
+    position:absolute;
+    transform:translate(-50%,-50%);
+}*/
