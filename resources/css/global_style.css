@@ -1,3 +1,17 @@
+body
+{
+    background-color: #BDCFDE;
+    font-family: 'Roboto Mono';
+}
+
+/* NAVBAR */
+.navbar 
+{
+    background-color: #454959; 
+    margin-left: 0px;
+    text-indent: 15px;
+}
+
 /* LINK STYLE */
 a.link_navbar:link { color:#FFF; text-decoration:none; font-weight:normal; }
 a.link_navbar:visited { color: #FFF; text-decoration:none; font-weight:normal; }
@@ -6,3 +20,42 @@ a.link_navbar:active { color: #FFF; text-decoration:none; font-weight:normal; }
 
 /* BOOTSTRAP OVERRIDE */
 .custom_link{ color: white !important; }
+
+/* GITHUB LOGO and LINK */
+.github_logo
+{
+    right: 0; 
+    position: absolute;
+}
+
+/* NAVBAR END */
+
+.below_nav
+{
+    margin: 8px;
+}
+
+.container
+{
+    margin-top: 30px;
+    margin-bottom:15px;
+}
+
+.portrait
+{
+    padding: 20px;
+    border: 2px solid #454959;
+    border-width: 2;
+    background-color: #DED9DC;
+}
+
+.subheader
+{
+    margin-bottom: 15px;
+}
+
+.socialLink
+{
+    margin: 10px;
+    text-decoration: none;
+}
