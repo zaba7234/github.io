@@ -46,7 +46,7 @@ a.link_navbar:active { color: #FFF; text-decoration:none; font-weight:normal; }
 {
     padding: 20px;
     border: 2px solid #454959;
-    border-width: 2;
+    border-width: 2px;
     background-color: #DED9DC;
 }
 
@@ -55,7 +55,7 @@ a.link_navbar:active { color: #FFF; text-decoration:none; font-weight:normal; }
     margin-bottom: 15px;
 }
 
-.socialLink
+.social_link
 {
     margin: 10px;
     text-decoration: none;
