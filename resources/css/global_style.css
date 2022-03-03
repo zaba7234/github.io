@@ -87,13 +87,6 @@ a.link_navbar:active { color: #FFF; text-decoration:none; font-weight:normal; }
 
 @media screen and (max-width: 1000px)
 {
-    .navbar 
-    {
-        background-color: #3D322C; 
-        margin-left: 0px;
-        text-indent: 15px;
-        font-weight: bold;
-    }
     .flex
     {
         flex-flow: column nowrap;
