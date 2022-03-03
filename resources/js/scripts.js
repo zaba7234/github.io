@@ -1,4 +1,4 @@
-function changeImage()
+/*function changeImage()
 {
     var image = document.getElementById("portraitImg");
     var choice = Math.trunc(Math.random() * 3);
@@ -30,7 +30,6 @@ function changeImage()
     }
 }
 
-/*
 let follow = document.getElementById('follow');
 
 const mouseMovement = (mouse) =>
@@ -40,4 +39,25 @@ const mouseMovement = (mouse) =>
 }
 
 document.addEventListener('mousemove', mouseMovement);
+*/
+
+/*
+window.addEventListener("resize", 
+    function() {
+        dropdown = document.getElementById("dropdownChange");
+        if (window.matchMedia("(min-width: 1000px)".matches))
+        {
+            console.log("screen > 1000px");
+            if (dropdown.classList.)
+            dropdown.classList.remove("dropend");
+            dropdown.classList.add("dropdown");
+        }
+        else
+        {
+            console.log("screen < 1000px");
+            dropdown.classList.remove("dropdown");
+            dropdown.classList.add("dropend");
+        }
+    }
+)
 */
