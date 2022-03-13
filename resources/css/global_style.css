@@ -124,6 +124,11 @@ a.email_link:active { color:rgb(179, 212, 223); text-decoration:none; font-weigh
     margin-top: 12%;
 }
 
+.resume
+{
+    width: 100%;
+}
+
 @media screen and (max-width: 1000px)
 {
     .flex
