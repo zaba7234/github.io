@@ -22,7 +22,7 @@ a.link_navbar:active { color: #FFF; text-decoration:none; font-weight:normal; }
 a.email_link:link { color:rgb(77, 163, 189); text-decoration:none; font-weight:normal; }
 a.email_link:visited { color:rgb(9, 96, 122); text-decoration:none; font-weight:normal; }
 a.email_link:hover { color:rgb(186, 223, 235); text-decoration:none; font-weight:normal; }
-a.email_link:active { color:rgb(179, 212, 223); text-decoration:none; font-weight:normal; }
+a.email_link:active { color:rgb(186, 223, 235); text-decoration:none; font-weight:normal; }
 
 /* BOOTSTRAP OVERRIDE */
 .custom_link{ color: white !important; }
