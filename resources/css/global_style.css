@@ -19,6 +19,11 @@ a.link_navbar:visited { color: #FFF; text-decoration:none; font-weight:normal; }
 a.link_navbar:hover { color: #FFF; text-decoration:none; font-weight:normal; }
 a.link_navbar:active { color: #FFF; text-decoration:none; font-weight:normal; }
 
+a.email_link:link { color:rgb(77, 163, 189); text-decoration:none; font-weight:normal; }
+a.email_link:visited { color:rgb(9, 96, 122); text-decoration:none; font-weight:normal; }
+a.email_link:hover { color:rgb(186, 223, 235); text-decoration:none; font-weight:normal; }
+a.email_link:active { color:rgb(179, 212, 223); text-decoration:none; font-weight:normal; }
+
 /* BOOTSTRAP OVERRIDE */
 .custom_link{ color: white !important; }
 
@@ -63,15 +68,37 @@ a.link_navbar:active { color: #FFF; text-decoration:none; font-weight:normal; }
     width: 370px;
 }
 
+.flex_item.project
+{
+    flex: 1 1 65%;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border-left: 2px solid rgb(31, 126, 155);
+    padding: 50px 0px 20px 50px;
+}
+
 .name
 {
     color: #F29885;
     font-family: Palatino;
 }
 
+.name.contact
+{
+    color: #F29885;
+    font-family: Palatino;
+    margin-bottom: 20px;
+}
+
 .subtitle
 {
     margin-bottom: 30px;
+}
+
+.subtitle.subproj
+{
+    margin-bottom: 10px;
 }
 
 .subheader
@@ -83,6 +110,18 @@ a.link_navbar:active { color: #FFF; text-decoration:none; font-weight:normal; }
 {
     margin: 10px;
     text-decoration: none;
+}
+
+.resume_center
+{
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+
+.contact_box
+{
+    margin-top: 12%;
 }
 
 @media screen and (max-width: 1000px)
@@ -97,6 +136,17 @@ a.link_navbar:active { color: #FFF; text-decoration:none; font-weight:normal; }
         flex: 1 1 40%;
     }
 
+    .flex_item.project
+    {
+        flex: 1 1 65%;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        border-left: 0px solid rgb(31, 126, 155);
+        border-top: 2px solid rgb(31, 126, 155);
+        padding: 20px;
+    }
+
     .name
     {
         margin-top: 20px;
@@ -107,6 +157,12 @@ a.link_navbar:active { color: #FFF; text-decoration:none; font-weight:normal; }
     {
         margin-bottom: 30px;
         text-align: center;
+    }
+
+    .subtitle.subproj
+    {
+        margin-bottom: 10px;
+        text-align: left;
     }
 }
 

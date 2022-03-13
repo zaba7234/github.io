@@ -10,7 +10,7 @@
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
       <script src="../resources/js/scripts.js"></script>
   </head>
-  <body>
+  <body onload="changeImage()">
     <nav class="navbar navbar-expand-lg narvar-light">
       <ul class="navbar-nav">
         <li class="nav-item">
@@ -36,34 +36,14 @@
         </a>
       </div>
   	</nav>
-    <div class="below_nav flex contact_box">
-      <div class="flex_item text-center">
-        <div>
-          <h1 class="display-5 name contact">Contact Me!</h1>
-          <h4 class="subtitle">I prefer contact via email:
-            <a class="email_link" href = "mailto: j.zackbaker@gmail.com">j.zackbaker@gmail.com</a>
-          </h4>
-          <h4 class="subtitle">
-            Or for University of Colorado related inquiries:
-            <a class="email_link" href = "mailto: zaba7234@colorado.edu">zaba7234@colorado.edu</a>
-          </h4>
-          <h4 class="subtitle">But feel free to check out my all my links:</h4>
+    <div class="below_nav">
+      <div class="container">
+        <div class="resume_center">
+          <h1 class="display-5 name">Resume</h1>
         </div>
-      </div>
-      <div class="flex_item">
-        <div class="mb-4 text-center">
-          <a class="social_link" href="https://www.linkedin.com/in/zachary-baker-926162232/">
-            <img src="../resources/img/Linkedin-Logo.PNG" width="100" alt="Linkedin Icon">
-          </a>
-          <a class="social_link navbar-brand" href="https://github.com/zacharyjbaker">
-            <img src="../resources/img/GitHub-Mark-64px.png" width="30" alt="GitHub Octocat Icon">
-          </a>
-          <a class="social_link navbar-brand" href="https://csci-3308-spring22-012-3.atlassian.net/jira/people/61f1da9f25edab006a1d271d">
-            <img src="../resources/img/atlassian_jira_logo_icon_170511.PNG" width="30" alt="Jira Icon">
-          </a>
-        </div>
-      </div>
+        <embed src="../resources/misc/Resume.pdf#zoom=scale" type="application/pdf" width="100%" height="600px"></embed>
         <hr>
+      </div>
     </div>
   </body>
 </html>
