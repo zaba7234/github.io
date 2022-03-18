@@ -7,11 +7,11 @@
       <!--BOOTSTRAP, STYLESHEET, AND JAVASCRIPT-->
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
       <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Roboto+Mono'>
-      <link rel="stylesheet" href="../resources/css/global_style.css">
+      <link rel="stylesheet" href="resources/css/global_style.css">
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-      <script src="../resources/js/scripts.js"></script>
+      <script src="resources/js/scripts.js"></script>
   </head>
-  <body>
+  <body onload="changeImage()">
     <nav class="navbar navbar-expand-lg narvar-light">
       <ul class="navbar-nav">
         <li class="nav-item">
@@ -33,38 +33,47 @@
       </ul>
       <div class="github_logo">
         <a class="navbar-brand" href="https://github.com/zacharyjbaker">
-          <img src="../resources/img/GitHub-Mark-64px.png" width="30" alt="GitHub Octocat Icon">
+          <img src="resources/img/GitHub-Mark-64px.png" width="30" alt="GitHub Octocat Icon">
         </a>
       </div>
   	</nav>
-    <div class="below_nav flex contact_box">
-      <div class="flex_item text-center">
+    <div class="below_nav flex">
+      <div class="flex_item portrait">
+        <h1 class="display-5 name">Recent Projects</h1>
+      </div>
+      <div class="flex_item project">
         <div>
-          <h1 class="display-5 name contact">Contact Me!</h1>
-          <h4 class="subtitle">I prefer contact via email:
-            <a class="email_link" href = "mailto:j.zackbaker@gmail.com">j.zackbaker@gmail.com</a>
-          </h4>
-          <h4 class="subtitle">
-            Or for University of Colorado related inquiries:
-            <a class="email_link" href = "mailto:zaba7234@colorado.edu">zaba7234@colorado.edu</a>
-          </h4>
-          <h4 class="subtitle">But feel free to check out my all my links:</h4>
+          <h3 class="subtitle subproj">Image</h3>
+          <div class="textbox">
+            <p>
+              I like taking cool photos! Have a look at some the shots I've taken.
+            </p>
+            <a class="email_link big" href="https://drive.google.com/drive/folders/1mOBGOXz7EgH2MALkTTwbGSFNhqFwhcG2?usp=sharing">Click here!</a>
+          </div>
         </div>
-      </div>
-      <div class="flex_item">
-        <div class="mb-4 text-center">
-          <a class="social_link" href="https://www.linkedin.com/in/zachary-baker-926162232/">
-            <img src="../resources/img/Linkedin-Logo.PNG" width="100" alt="Linkedin Icon">
-          </a>
-          <a class="social_link navbar-brand" href="https://github.com/zacharyjbaker">
-            <img src="../resources/img/GitHub-Mark-64px.png" width="30" alt="GitHub Octocat Icon">
-          </a>
-          <a class="social_link navbar-brand" href="https://csci-3308-spring22-012-3.atlassian.net/jira/people/61f1da9f25edab006a1d271d">
-            <img src="../resources/img/atlassian_jira_logo_icon_170511.PNG" width="30" alt="Jira Icon">
-          </a>
-        </div>
-      </div>
         <hr>
+        <div>
+          <h3 class="subtitle subproj">Web</h3>
+          <div class="textbox">
+            <p>
+              Checkout what I've done in web development! Beware, it is not as pretty as this site.
+              <em>It is very prototypal.</em>
+            </p>
+            <a class="email_link big" href="assignments/assignment1.html">Click here!</a>
+          </div>
+        </div>
+        <hr>
+        <div>
+          <h3 class="subtitle subproj">Design Foundations</h3>
+          <div class="textbox">
+            <p>
+              Here lies some of my early design work in the form of a blog. Oh God, the horrors within.
+            </p>
+            <a class="email_link big" href="https://ezbakemicrowave.wordpress.com/author/ezbakemicrowave/">Click here!</a>
+          </div>
+        </div>
+        <hr>
+      </div>
     </div>
   </body>
 </html>
