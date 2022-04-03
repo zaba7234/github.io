@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
+      <title>Zack's Webpage</title>
+      <!--BOOTSTRAP, STYLESHEET, AND JAVASCRIPT-->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Roboto+Mono'>
+      <link rel="stylesheet" href="../resources/css/global_style.css">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      <script src="../resources/js/scripts.js"></script>
+  </head>
+  <body id="cursor">
+    <div class="below_nav flex">
+      <div class="flex_item">
+        <div>
+            <h1 class="display-5 name is_visible" id="instruct_d">COMMAND+D FOR DOG</h1>
+            <h1 class="display-5 name not_visible" id="instruct_s">COMMAND+S FOR SALVATION (translation: no dog)</h1>
+            <div class="not_visible" id="instruct_b">
+                <h1 class="display-5 name">Or click on the bowl for a surprise!</h1>
+                <img class="dog_bowl" id="bowl" src="../resources/img/bowl.PNG" onclick="bowlClick()">
+            </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
