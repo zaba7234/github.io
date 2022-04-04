@@ -1,6 +1,6 @@
 document.addEventListener('keydown', function(event) {
     event.preventDefault();
-    if (event.metaKey && event.key === 'd')
+    if (event.metaKey && event.key === 'h')
     {
         console.log("Dog Cursor Activated!");
         //document.getElementById("cursor").style.cursor = "url('../resources/img/corg.png'), auto;";
@@ -18,7 +18,7 @@ document.addEventListener('keydown', function(event) {
 
 document.addEventListener('keydown', function(event) {
     event.preventDefault();
-    if (event.metaKey && event.key === 's')
+    if (event.metaKey && event.key === 'j')
     {
         console.log("Dog Cursor Deactivated");
         //document.getElementById("cursor").style.cursor = "url('../resources/img/corg.png'), auto;";
