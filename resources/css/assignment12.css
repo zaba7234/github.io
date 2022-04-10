@@ -61,6 +61,10 @@ header {
   text-align: center;
 }
 
+.small {
+  font-size: 15px;
+}
+
 .controls {
   width: 100%;
   padding: 10px 50px;
