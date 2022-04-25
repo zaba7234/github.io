@@ -11,13 +11,13 @@
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
       <script src="resources/js/scripts.js"></script>
   </head>
-  <body onload="changeImage()">
-    <nav class="navbar navbar-expand-lg narvar-light">
+  <body>
+    <nav class="navbar navbar-expand-lg">
       <ul class="navbar-nav">
         <li class="nav-item">
           <a class="nav-link link_navbar" href="index.html">Home</a>
         </li>
-        <li class="nav-item dropdown">
+        <li class="nav-item dropdown" id="dropdownChange">
           <a class="nav-link dropdown-toggle custom_link" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Work</a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="work.html">Projects</a></li>
@@ -39,39 +39,18 @@
   	</nav>
     <div class="below_nav flex">
       <div class="flex_item portrait">
-        <h1 class="display-5 name">Recent Projects</h1>
+        <img src="resources/img/pic4.JPG" id="portraitImg" alt="A picture of me" width="370">
       </div>
-      <div class="flex_item project">
+      <div class="flex_item">
         <div>
-          <h3 class="subtitle subproj">Image</h3>
-          <div class="textbox">
-            <p>
-              I like taking cool photos! Have a look at some the shots I've taken.
-            </p>
-            <a class="email_link big" href="imageWork.html">Click here!</a>
-            <!-- <a class="email_link big" href="https://drive.google.com/drive/folders/1mOBGOXz7EgH2MALkTTwbGSFNhqFwhcG2?usp=sharing">Click here!</a> -->
-          </div>
+          <h1 class="display-5 name">Zachary Baker</h1>
+          <h3 class="subtitle">Developer & Designer</h3>
         </div>
-        <hr>
-        <div>
-          <h3 class="subtitle subproj">Web</h3>
-          <div class="textbox">
-            <p>
-              Checkout what I've done in web development! Beware, it is not as pretty as this site.
-              <em>It is very prototypal.</em>
-            </p>
-            <a class="email_link big" href="assignments/assignment1.html">Click here!</a>
-          </div>
-        </div>
-        <hr>
-        <div>
-          <h3 class="subtitle subproj">Design Foundations</h3>
-          <div class="textbox">
-            <p>
-              Here lies some of my early design work in the form of a blog. Oh God, the horrors within.
-            </p>
-            <a class="email_link big" href="https://ezbakemicrowave.wordpress.com/author/ezbakemicrowave/">Click here!</a>
-          </div>
+        <div class="textbox">
+          <p>
+            Hi! I'm Zack, a freshman at the University of Colorado, Boulder. This my development 
+            and design portfolio, feel free to have a look around!
+          </p>
         </div>
         <hr>
       </div>
