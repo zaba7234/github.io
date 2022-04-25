@@ -127,7 +127,7 @@ a.email_link:active { color:rgb(186, 223, 235); text-decoration:none; font-weigh
 
 .contact_box
 {
-    margin-top: 12%;
+    /* margin-top: 12%; */
 }
 
 .resume
