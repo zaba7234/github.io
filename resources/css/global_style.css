@@ -33,6 +33,13 @@ a.email_link:active { color:rgb(186, 223, 235); text-decoration:none; font-weigh
 /* BOOTSTRAP OVERRIDE */
 .custom_link{ color: white !important; }
 
+.hamburger
+{
+    background-color: #3D322C; 
+    border: 0;
+    visibility: hidden;
+}
+
 /* GITHUB LOGO and LINK */
 .github_logo
 {
@@ -174,6 +181,45 @@ a.email_link:active { color:rgb(186, 223, 235); text-decoration:none; font-weigh
 
 @media screen and (max-width: 1000px)
 {
+    .navbar-nav
+    {
+        left: -100%;
+        max-height: 40px;
+        visibility: hidden;     
+    }
+
+    .navbar-nav.mobile
+    {
+        left: 0%;
+        visibility: visible;
+        margin-top: 30px;
+        max-height: 160px;
+        animation: slide 0.2s forwards;
+        transform:translateX(-100%);
+    }
+
+    @keyframes slide {
+    to {
+           transform:translateX(0)
+        }
+     }
+
+    .nav-link.hidden
+    {
+        opacity: 0;
+    }
+
+    .github_logo
+    {
+        right: 0; 
+        top: 0;
+    }
+
+    .hamburger
+    {
+        visibility: visible;
+    }
+
     .flex
     {
         flex-flow: column nowrap;
