@@ -16,7 +16,7 @@ hideLink.addEventListener("click", async function(event) {
     // console.log(hidden1, hidden2);
     hidden1.classList.toggle("hidden");
     hidden2.classList.toggle("hidden");
-    hideLink.classList.toggle("active");
+    hideLink.classList.toggle("active_toggle");
 }); 
 
 document.addEventListener("click", async function(event) {

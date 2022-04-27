@@ -261,7 +261,7 @@ a.email_link:active { color:rgb(186, 223, 235); text-decoration:none; font-weigh
         visibility: hidden;
     }
 
-    .active {
+    .active_toggle {
         visibility: visible
     }
 
