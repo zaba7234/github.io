@@ -101,9 +101,27 @@ a.email_link:active { color:rgb(186, 223, 235); text-decoration:none; font-weigh
     width: 370px;
 }
 
+.flex_item.else
+{
+    flex: 1 1 auto;
+    justify-content: right;
+    align-items: centrighter;
+    height: 100%;
+}
+
 .flex_item.project
 {
     flex: 1 1 65%;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border-left: 2px solid rgb(31, 126, 155);
+    padding: 50px 0px 20px 50px;
+}
+
+.flex_item.assignments
+{
+    flex: 1 1 50%;
     justify-content: center;
     align-items: center;
     height: 100%;
@@ -123,8 +141,6 @@ a.email_link:active { color:rgb(186, 223, 235); text-decoration:none; font-weigh
     font-family: Palatino;
     margin-bottom: 20px;
 }
-
-
 
 .subtitle
 {
@@ -162,15 +178,14 @@ a.email_link:active { color:rgb(186, 223, 235); text-decoration:none; font-weigh
     text-align: center;
 }
 
-
-.contact_box
-{
-    /* margin-top: 12%; */
-}
-
 .resume
 {
     width: 100%;
+}
+
+.indent
+{
+    margin-top: 10px;
 }
 
 .dog_cursor
@@ -210,6 +225,12 @@ a.email_link:active { color:rgb(186, 223, 235); text-decoration:none; font-weigh
     visibility: hidden;
 }
 
+.small
+{
+    margin-top: 20px;
+    text-align: center;
+}
+
 @media screen and (max-width: 1000px)
 {
     .navbar-nav
@@ -240,7 +261,9 @@ a.email_link:active { color:rgb(186, 223, 235); text-decoration:none; font-weigh
         visibility: hidden;
     }
 
-    .active {}
+    .active {
+        visibility: visible
+    }
 
     .github_logo
     {
@@ -279,6 +302,11 @@ a.email_link:active { color:rgb(186, 223, 235); text-decoration:none; font-weigh
     {
         margin-top: 20px;
         text-align: center;
+    }
+
+    .small
+    {
+        visibility: hidden;
     }
 
     .subtitle
