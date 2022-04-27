@@ -16,13 +16,27 @@ hideLink.addEventListener("click", async function(event) {
     // console.log(hidden1, hidden2);
     hidden1.classList.toggle("hidden");
     hidden2.classList.toggle("hidden");
+    hideLink.classList.toggle("active");
 }); 
 
 document.addEventListener("click", async function(event) {
-    // console.log("clicked")
-    if (hidden1.classList.contains("hidden") && navbar.classList.contains("mobile"))
+    if (!hideLink.contains(event.target))
     {
-        hidden1.classList.toggle("hidden");
-        hidden2.classList.toggle("hidden");
+        //console.log("UNHIDDEN")
+        hidden1.classList.remove("hidden");
+        hidden2.classList.remove("hidden");
+    }
+});
+
+document.addEventListener('keydown', function(event) {
+    //console.log("dog");
+    event.preventDefault();
+    if (event.metaKey && event.key === 'h')
+    {
+        //console.log("Dog Cursor Activated!");
+        //document.getElementById("cursor").style.cursor = "url('../resources/img/corg.png'), auto;";
+        document.getElementById("cursor").classList.add('dog_cursor');
+        document.getElementById("instruct_d").classList.remove('is_visible');
+        document.getElementById("instruct_d").classList.add('not_visible');
     }
 });

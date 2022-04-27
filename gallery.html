@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
+    <title>Zack's Webpage</title>
+    <!--BOOTSTRAP, STYLESHEET, AND JAVASCRIPT-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Roboto+Mono'>
+    <link rel="stylesheet" href="resources/css/global_style.css">
+    <link rel="stylesheet" href="resources/css/gallery.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script defer src="resources/js/scripts.js" charset="utf-8"></script>
+    <script defer src="resources/js/gallery.js" charset="utf-8"></script>
+  </head>
+  <body class="gallery1">
+    <nav class="navbar navbar-expand-lg">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link link_navbar" href="index.html">Home</a>
+        </li>
+        <li class="nav-item dropdown" id="dropdownChange">
+          <a class="nav-link dropdown-toggle custom_link" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Work</a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="work.html">Projects</a></li>
+            <li><a class="dropdown-item" href="gallery.html">Image Gallery</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link_navbar" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a id="hideLink" class="nav-link link_navbar" href="contact.html">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a id="hideLink2"class="nav-link link_navbar" href="resume.html">Resumé</a>
+        </li>
+      </ul>
+      <div class="github_logo">
+        <button id="hamburger" class="navbar-brand hamburger">
+        <img src="resources/img/Hamburger_icon.svg" width="30" alt="Hamburger Icon">
+        </button>
+      </div>
+    </nav>
+    <div class="below_nav">
+      <p id="text" class="center_text">Click/tap on the image to look through the gallery</p>
+      <div id="counter" class="counter"></div>
+      <div id="carousel" class="carousel">
+        <img id="1" class="c_image active" src="resources/img/gallery/img1.jpg" alt="LEGO dinosaur with paleontologist">
+        <img id="2" class="c_image" src="resources/img/gallery/img2.jpg" alt="LEGO Zack taking a picture of human Zack who's taking a picture">
+        <img id="3" class="c_image" src="resources/img/gallery/img3.jpg" alt="LEGO explorers sitting around a campfire">
+        <img id="4" class="c_image" src="resources/img/gallery/img4.jpg" alt="LEGO Spider-Man fighting in front of the Daily Bugle">
+      </div>
+
+    </div>
+  </body>
+</html>
